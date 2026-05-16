@@ -256,3 +256,4 @@ class Heartbeat:
 
         log.info("Game complete. Starting next cycle in 5s...")
         await asyncio.sleep(5)
+        log.info("VERSION RESPONSE: %s", await self.api.get_version())
